@@ -139,18 +139,10 @@
   .dark .moon-icon { display:inline; }
   .dark .work-number { background:#303128; color:#f0eee6; }
 }
-
-
-
-
-
 @keyframes softFloat { 0%,100% { transform:translateY(0) rotate(-12deg); } 50% { transform:translateY(-9px) rotate(-9deg); } }
 @keyframes revealLine { from { transform:scaleX(0); transform-origin:left; } to { transform:scaleX(1); transform-origin:left; } }
 .hero-stamp { animation:softFloat 5s ease-in-out infinite; }
 .eyebrow-line { animation:revealLine 1.2s .2s both; }
-
-
-
 @media (max-width: 767px) {
   .hero-section { min-height:0; display:flex; flex-direction:column; align-items:stretch; padding:65px 23px 85px; gap:42px; }
   .hero-copy h1 { font-size:clamp(65px,17vw,95px); margin:25px 0 20px; }
@@ -196,5 +188,4 @@
   .footer-bottom { flex-wrap:wrap; gap:12px; font-size:6px; }
   .footer-bottom span:last-child { display:none; }
 }
-
-@media (prefers-reduced-motion: reduce) { ,::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
