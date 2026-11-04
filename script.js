@@ -1,4 +1,4 @@
-/* CANDELA STUDIO — navegación, tema y animaciones */
+
 (function () {
   'use strict';
 
@@ -76,7 +76,7 @@
     });
   }
 
-  // jQuery is used when loaded; native fallback avoids breaking the page if its CDN is offline.
+  
   if (window.jQuery) {
     window.jQuery(initCandela);
   } else if (document.readyState === 'loading') {
@@ -88,15 +88,13 @@
 
 
 
-/* ==========================================
-   CANDELA STUDIO — FORMULARIO DE CONTACTO
-   ========================================== */
+
 
 (function () {
 
   const form = document.getElementById('bookingForm');
 
-  // Si estamos en index.html, no hacemos nada.
+  
   if (!form) return;
 
   const feedback = document.getElementById('formFeedback');
@@ -104,7 +102,7 @@
   const copyButton = document.getElementById('copyRequest');
   const dateInput = document.getElementById('date');
 
-  // Evitar seleccionar fechas anteriores a hoy.
+  
   const today = new Date();
 
   const localToday = new Date(
@@ -115,7 +113,7 @@
 
   let requestText = '';
 
-  // PREPARAR SOLICITUD
+ 
   form.addEventListener('submit', function (event) {
 
     event.preventDefault();
@@ -146,7 +144,7 @@
 
   });
 
-  // COPIAR SOLICITUD
+  
   copyButton.addEventListener('click', async function () {
 
     try {
