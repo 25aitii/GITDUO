@@ -1,4 +1,4 @@
-/* CANDELA STUDIO — interacción de navegación, tema y animaciones */
+/* js */
 $(function () {
   AOS.init({ duration: 750, once: true, offset: 65, easing: 'ease-out-cubic' });
 
@@ -22,7 +22,7 @@ $(function () {
     $('meta[name="theme-color"]').attr('content', isDark ? '#24251f' : '#f3f0e9');
   });
 
-  // Cierra el menú móvil si se amplía la ventana a escritorio.
+  // Cierra el menú móvil //
   $(window).on('resize', function () {
     if (window.innerWidth >= 768) {
       $menu.removeClass('open').attr('aria-hidden', 'true');
