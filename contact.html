@@ -1,0 +1,431 @@
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacta con Candela Studio y solicita tu cita para un tatuaje personalizado en Madrid.">
+  <meta name="theme-color" content="#ffffff">
+  <title>CONTACTO — CANDELA STUDIO</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-paper text-ink font-body antialiased">
+
+  <!-- BARRA ARRIBA -->
+  <div class="announcement-bar text-center py-2 px-4 text-[9px] sm:text-[10px] tracking-[.22em] uppercase">
+    Madrid, España
+    <span class="mx-2 opacity-40">✳</span>
+    Tattoo, made personal
+    <span class="mx-2 opacity-40">✳</span>
+    Citas abiertas por encargo
+  </div>
+
+ 
+  <header class="site-header sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur-xl">
+
+    <nav class="mx-auto max-w-[1440px] px-5 md:px-10 h-[76px] flex items-center justify-between" aria-label="Navegación principal">
+
+      <a href="index.html" class="wordmark" aria-label="Candela Studio, inicio">
+        CANDELA<span>®</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-9 nav-links">
+        <a href="index.html#filosofia">El estudio</a>
+        <a href="index.html#trabajo">Portfolio</a>
+        <a href="index.html#servicios">Especialidades</a>
+        <a href="contact.html" aria-current="page">Visítanos</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+          <span class="sun-icon">☼</span>
+          <span class="moon-icon">☾</span>
+        </button>
+
+        <a href="#reserva" class="nav-cta hidden sm:inline-flex">
+          Pedir cita <span>↗</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle md:hidden" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- MENÚ MÓVIL -->
+    <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
+      <a href="index.html#filosofia">El estudio <span>01</span></a>
+      <a href="index.html#trabajo">Portfolio <span>02</span></a>
+      <a href="index.html#servicios">Especialidades <span>03</span></a>
+      <a href="contact.html">Contacto <span>04</span></a>
+      <a href="#reserva" class="mobile-book">Pedir cita ↗</a>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- INTRO CONTACTO -->
+    <section class="contact-hero">
+
+      <div class="contact-hero-copy" data-aos="fade-up">
+
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          05 — LET'S TALK
+        </p>
+
+        <h1>
+          Tu próxima<br>
+          <em>historia.</em>
+        </h1>
+
+        <p class="contact-intro">
+          Cada tatuaje empieza con una conversación.
+          Cuéntame qué tienes en mente y encontraremos
+          juntas la forma de llevarlo a tu piel.
+        </p>
+
+        <a class="button-dark" href="#reserva">
+          Solicitar una cita <span>↓</span>
+        </a>
+
+      </div>
+
+      <div class="contact-hero-side" data-aos="fade-left">
+
+       
+
+        <p>
+          GOOD IDEAS<br>
+          START WITH<br>
+          <em>A HELLO.</em>
+        </p>
+
+        <span class="contact-side-caption">
+          CANDELA STUDIO · MADRID
+        </span>
+
+      </div>
+
+      <span class="contact-index">CONTACT / 01 — 02</span>
+
+    </section>
+
+
+    <!-- FORMULARIO -->
+    <section id="reserva" class="booking-section section-pad">
+
+      <div class="booking-heading" data-aos="fade-up">
+
+        <p class="eyebrow">01 — BOOK YOUR SESSION</p>
+
+        <h2>
+          Hablemos de<br>
+          <em>tu idea.</em>
+        </h2>
+
+        <p>
+          Rellena este pequeño formulario con los detalles
+          de tu propuesta y tu disponibilidad. La fecha y
+          la hora son orientativas: la cita quedará
+          pendiente de confirmación.
+        </p>
+
+      </div>
+
+
+      <form id="bookingForm" class="booking-form" data-aos="fade-up">
+
+        <div class="form-topline">
+          <span>BOOKING REQUEST</span>
+          <span> MADRID / 2026</span>
+        </div>
+
+        <div class="form-grid">
+
+          <div class="form-field">
+            <label for="name">
+              Nombre completo <span>*</span>
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Cómo te llamas"
+              required
+            >
+          </div>
+
+         
+          <div class="form-field">
+            <label for="email">
+              Correo electrónico <span>*</span>
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="tu@email.com"
+              required
+            >
+          </div>
+
+        
+          <div class="form-field">
+            <label for="tattooType">
+              Tipo de tatuaje
+            </label>
+
+            <select id="tattooType" name="tattooType">
+              <option value="">Selecciona una especialidad</option>
+              <option>Fine line</option>
+              <option>Botanical & floral</option>
+              <option>Custom design</option>
+              <option>Lettering & ornamental</option>
+              <option>Otra idea</option>
+            </select>
+          </div>
+
+         
+          <div class="form-field">
+            <label for="bodyZone">
+              Zona del cuerpo
+            </label>
+
+            <input
+              id="bodyZone"
+              name="bodyZone"
+              type="text"
+              placeholder="Ej. antebrazo, muñeca..."
+            >
+          </div>
+
+          
+          <div class="form-field">
+            <label for="date">
+              Fecha preferida <span>*</span>
+            </label>
+
+            <input
+              id="date"
+              name="date"
+              type="date"
+              required
+            >
+          </div>
+
+          
+          <div class="form-field">
+            <label for="time">
+              Hora preferida <span>*</span>
+            </label>
+
+            <input
+              id="time"
+              name="time"
+              type="time"
+              required
+            >
+          </div>
+
+          
+          <div class="form-field form-field-full">
+            <label for="details">
+              Cuéntame tu idea
+            </label>
+
+            <textarea
+              id="details"
+              name="details"
+              rows="5"
+              placeholder="Tamaño aproximado, referencias, significado o cualquier detalle que quieras compartir..."
+            ></textarea>
+          </div>
+
+        </div>
+
+
+        
+        <div class="form-submit-row">
+
+          <p>
+            <span>*</span> Campos obligatorios.
+            Tu solicitud no confirma automáticamente la cita.
+          </p>
+
+          <button class="button-dark" type="submit">
+            Preparar solicitud <span>↗</span>
+          </button>
+
+        </div>
+
+
+        
+        <div id="formFeedback" class="form-feedback" role="status" aria-live="polite" hidden>
+
+          <strong>Tu solicitud está preparada.</strong>
+
+          <p id="requestSummary"></p>
+
+          <div class="feedback-actions">
+
+            <button id="copyRequest" class="underlined-link" type="button">
+              Copiar solicitud ↗
+            </button>
+
+            <a
+              class="underlined-link"
+              href="https://www.instagram.com/candelastatt/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Enviar por Instagram ↗
+            </a>
+
+          </div>
+
+          <small>
+            Este formulario no envía datos automáticamente.
+            Copia el texto y compártelo por Instagram
+            para confirmar disponibilidad.
+          </small>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <!-- CONTACTO ALTERNATIVO -->
+    <section class="contact-alternative section-pad">
+
+      <div class="alternative-copy" data-aos="fade-up">
+
+        <p class="eyebrow">
+          02 — PREFER A MESSAGE?
+        </p>
+
+        <h2>
+          También puedes<br>
+          <em>escribirme a +34 670 45 67 88.</em>
+        </h2>
+
+        <p>
+          Si todavía no tienes clara tu idea o prefieres
+          hablar directamente, puedes contactar conmigo
+          a través de Instagram.
+        </p>
+
+        <a
+          class="button-dark"
+          href="https://www.instagram.com/candelastatt/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @candelastatt <span>↗</span>
+        </a>
+
+      </div>
+
+
+      <div class="contact-social-card" data-aos="fade-left">
+
+        <div class="social-card-top">
+          <span>CANDELA STUDIO</span>
+          <span>✳ 02 / 02</span>
+        </div>
+
+        <div class="social-card-center">
+          <span>♡</span>
+          <strong>
+            Let's make<br>
+            it personal.
+          </strong>
+        </div>
+
+        <div class="social-card-bottom">
+          <span>INSTAGRAM</span>
+
+          <a
+            href="https://www.instagram.com/candelastatt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @candelastatt ↗
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <a href="index.html" class="footer-wordmark">
+        CANDELA<span>®</span>
+      </a>
+
+      <p>
+        Small stories.<br>
+        Forever on your skin.
+      </p>
+
+      <a
+        class="footer-ig"
+        href="https://www.instagram.com/candelastatt/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        INSTAGRAM ↗
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>© 2026 CANDELA STUDIO — CONCEPT WEBSITE</span>
+
+      <a
+        href="#top"
+        onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"
+      >
+        BACK TO TOP ↑
+      </a>
+
+      <span>MADE WITH INTENTION.</span>
+
+    </div>
+
+  </footer>
+
+
+
+  
+
+</body>
+</html>

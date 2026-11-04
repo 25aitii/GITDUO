@@ -85,3 +85,83 @@
     initCandela();
   }
 })();
+
+
+
+/* ==========================================
+   CANDELA STUDIO — FORMULARIO DE CONTACTO
+   ========================================== */
+
+(function () {
+
+  const form = document.getElementById('bookingForm');
+
+  // Si estamos en index.html, no hacemos nada.
+  if (!form) return;
+
+  const feedback = document.getElementById('formFeedback');
+  const summary = document.getElementById('requestSummary');
+  const copyButton = document.getElementById('copyRequest');
+  const dateInput = document.getElementById('date');
+
+  // Evitar seleccionar fechas anteriores a hoy.
+  const today = new Date();
+
+  const localToday = new Date(
+    today.getTime() - today.getTimezoneOffset() * 60000
+  ).toISOString().slice(0, 10);
+
+  dateInput.min = localToday;
+
+  let requestText = '';
+
+  // PREPARAR SOLICITUD
+  form.addEventListener('submit', function (event) {
+
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+
+    requestText = [
+      'SOLICITUD DE CITA — CANDELA STUDIO',
+      'Nombre: ' + data.get('name'),
+      'Email: ' + data.get('email'),
+      'Tipo de tatuaje: ' + (data.get('tattooType') || 'No especificado'),
+      'Zona del cuerpo: ' + (data.get('bodyZone') || 'No especificada'),
+      'Fecha preferida: ' + data.get('date'),
+      'Hora preferida: ' + data.get('time'),
+      'Idea: ' + (data.get('details') || 'Pendiente de comentar')
+    ].join('\n');
+
+    summary.textContent = requestText;
+
+    feedback.hidden = false;
+
+    feedback.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+
+  });
+
+  // COPIAR SOLICITUD
+  copyButton.addEventListener('click', async function () {
+
+    try {
+
+      await navigator.clipboard.writeText(requestText);
+
+      copyButton.textContent = 'Solicitud copiada ✓';
+
+    } catch (error) {
+
+      copyButton.textContent =
+        'No se pudo copiar. Selecciona el texto.';
+
+    }
+
+  });
+
+})();
