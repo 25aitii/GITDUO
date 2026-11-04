@@ -191,10 +191,78 @@
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
 
 
-/* Fallback: sin AOS los elementos no quedan ocultos. */
-html:not(.aos-ready) [data-aos] { opacity: 1 !important; transform: none !important; }
-.service-item { display: grid; color: inherit; text-decoration: none; cursor: pointer; }
-.service-item:focus-visible, .services-footnote a:focus-visible, .nav-links a:focus-visible, .button-dark:focus-visible, .underlined-link:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
-.services-section { background-color: var(--color-olive) !important; color: #f3f0e9 !important; }
-.services-section .service-item:hover .service-mark, .services-section .service-item:focus-visible .service-mark { transform: translate(3px, -3px); }
-.service-mark { display: inline-block; transition: transform .25s ease; }
+/* CANDELA STUDIO — monochrome art direction */
+@theme {
+  --color-paper: #ffffff;
+  --color-paper-deep: #f3f3f1;
+  --color-ink: #111111;
+  --color-olive: #222222;
+  --color-olive-dark: #555555;
+}
+@layer base {
+  ::selection { background: #111111; color: #ffffff; }
+}
+@layer components {
+  .announcement-bar { background: #111111; color: #ffffff; }
+  .nav-cta, .button-dark, .mobile-book { background: #111111; color: #ffffff; }
+  .nav-cta:hover, .button-dark:hover { background: #444444; }
+  .intro-section, .quote-section { background: #f3f3f1; }
+  .services-section { background: #111111; color: #ffffff; }
+  .services-section .eyebrow { color: #cfcfcf; }
+  .services-section .services-top h2,
+  .services-section .services-top h2 em { color: #ffffff; }
+  .services-section .service-list { border-color: #ffffff55; }
+  .services-section .service-item { border-color: #ffffff55; }
+  .services-section .services-footnote a { border-color: #ffffff88; }
+  .services-section .service-item:hover { padding-left: 10px; }
+  .services-section .service-item:focus-visible { outline: 2px solid #ffffff; outline-offset: 5px; }
+  .services-section .service-mark { transition: transform .25s ease; }
+  .services-section .service-item:hover .service-mark,
+  .services-section .service-item:focus-visible .service-mark { transform: translate(3px,-3px); }
+  .hero-stamp { background: #111111; color: #ffffff; }
+  .note-star, .ornament, .quote-mark { color: #222222; }
+  h1 em, h2 em, blockquote em { color: #333333; }
+}
+
+/* Ilustración original: pequeña, integrada en el titular del portfolio. */
+.portfolio-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 3vw, 38px);
+}
+.portfolio-illustration {
+  display: block;
+  width: clamp(82px, 12vw, 158px);
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+  mix-blend-mode: multiply;
+  transform: rotate(-7deg);
+  transition: transform .45s ease;
+}
+.portfolio-title-wrap:hover .portfolio-illustration {
+  transform: rotate(0deg) translateY(-4px);
+}
+#work-fine-line, #work-botanical, #work-custom, #work-lettering,
+#trabajo, #servicios { scroll-margin-top: 100px; }
+.service-item { cursor: pointer; }
+.service-item:focus-visible,
+.nav-links a:focus-visible,
+.button-dark:focus-visible,
+.underlined-link:focus-visible,
+.services-footnote a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+/* Progressive enhancement: AOS adds motion, but never hides content if CDN fails. */
+html:not(.aos-ready) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+@media (max-width: 767px) {
+  .portfolio-title-wrap { gap: 8px; align-items: center; }
+  .portfolio-title-wrap > div { min-width: 0; }
+  .portfolio-illustration { width: 72px; }
+  .portfolio-title-wrap h2 { font-size: clamp(43px, 11vw, 61px); }
+}
