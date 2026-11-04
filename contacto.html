@@ -1,1 +1,121 @@
 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | The Drugged Monkey Tattoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>document.documentElement.classList.toggle('dark',localStorage.getItem('tdm-theme')!=='light');</script>
+</head>
+<body class="bg-cream text-ink dark:bg-black dark:text-cream">
+
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="logo-symbol">†</span><span>THE DRUGGED<br>MONKEY</span><small>TATTOO STUDIO</small></a>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  <nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="estudio.html">El estudio</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html" class="active">Contacto</a>
+  </nav>
+  <button class="theme-toggle" aria-label="Cambiar modo de color">☼</button>
+</header>
+
+<main>
+
+
+  <section class="contact-section section-padding">
+    <div class="contact-info" data-aos="fade-right">
+      <span class="eyebrow">CONTACT THE STUDIO</span>
+      <h2>MAKE YOUR<br><span>IDEA REAL.</span></h2>
+      <p>
+        ¿Tienes una idea para un tatuaje, quieres información sobre
+        piercings o necesitas resolver alguna duda? Escríbenos.
+      </p>
+
+      <div class="contact-detail">
+        <span>01 / ADDRESS</span>
+        <p>Travesía del Jubilado, 6<br>Mejorada del Campo, Madrid</p>
+      </div>
+
+      <div class="contact-detail">
+        <span>02 / PHONE</span>
+        <a href="tel:+34654690354">654 69 03 54</a>
+      </div>
+
+      <div class="contact-detail">
+        <span>03 / OPENING HOURS</span>
+        <p>Consultar disponibilidad y horario directamente con el estudio.</p>
+      </div>
+
+      <a class="btn-outline" href="https://www.google.com/maps/search/?api=1&query=Travesia+del+Jubilado+6+Mejorada+del+Campo" target="_blank" rel="noopener">CÓMO LLEGAR ↗</a>
+    </div>
+
+    <div class="contact-form-container" data-aos="fade-left">
+      <span class="eyebrow">SEND US A MESSAGE</span>
+      <h3>YOUR MESSAGE.</h3>
+
+      <form id="contact-form" class="contact-form">
+        <label for="name">NOMBRE</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="service">¿QUÉ NECESITAS?</label>
+        <select id="service" name="service" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Tatuaje">Tatuaje</option>
+          <option value="Piercing">Piercing</option>
+          <option value="Información">Información general</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="message">CUÉNTANOS TU IDEA</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+
+        <label class="privacy-label">
+          <input type="checkbox" id="privacy" required>
+          <span>He leído y acepto la política de privacidad.</span>
+        </label>
+
+        <button type="submit" class="btn-primary">ENVIAR MENSAJE ↗</button>
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="map-heading">
+      <span class="eyebrow">FIND OUR LOCATION</span>
+      <h2>COME <span>THROUGH.</span></h2>
+    </div>
+    <iframe
+      src="https://maps.google.com/maps?q=Travesia%20del%20Jubilado%206%20Mejorada%20del%20Campo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      title="Mapa de ubicación de The Drugged Monkey Tattoo"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand"><span class="footer-cross">†</span><h2>THE DRUGGED<br>MONKEY</h2><p>TATTOO STUDIO · MADRID</p></div>
+    <div><h3>EXPLORE</h3><a href="index.html">Inicio</a><a href="estudio.html">El estudio</a><a href="artistas.html">Artistas</a><a href="galeria.html">Galería</a></div>
+    <div><h3>FIND US</h3><p>Travesía del Jubilado, 6</p><p>Mejorada del Campo, Madrid</p><p>654 69 03 54</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 THE DRUGGED MONKEY TATTOO</span><span>ART IS FOREVER. INK IS PERSONAL.</span></div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
