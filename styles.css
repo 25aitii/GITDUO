@@ -1057,7 +1057,7 @@ html:not(.aos-ready) [data-aos] {
 
 .intro-section {
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url("assets/fondof.jpg") !important;
     background-size: cover;
     background-position: center;
@@ -1065,7 +1065,9 @@ html:not(.aos-ready) [data-aos] {
 }
 
 .dark .intro-section {
-    background-image: url("assets/fondof.jpg") !important;
+    background-image: 
+    linear-gradient(rgba(41, 39, 39, 0.7), rgba(48, 47, 47, 0.7)),
+        url("assets/fondof.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
