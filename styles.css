@@ -130,14 +130,132 @@
   .footer-bottom { border-top:1px solid #ffffff30; padding-top:18px; opacity:.6; font-size:7px; }
 }
 @layer utilities {
-  .dark { --color-paper:#24251f; --color-paper-deep:#303128; --color-ink:#f0eee6; --color-olive:#a2aa83; --color-olive-dark:#b5bd96; }
-  .dark .announcement-bar { background:#171812; }
-  .dark .nav-cta,.dark .button-dark,.dark .mobile-book { background:#e9e6dc; color:#24251f; }
-  .dark .mobile-menu { background:#24251f; }
-  .dark .visit-card { background:#dcd8cd; color:#292a22; }
-  .dark .sun-icon { display:none; }
-  .dark .moon-icon { display:inline; }
-  .dark .work-number { background:#303128; color:#f0eee6; }
+  .dark {
+    --color-paper: #0d0d0f;
+    --color-paper-deep: #17171b;
+    --color-ink: #f2edf0;
+    --color-olive: #e8afc3;
+    --color-olive-dark: #f0c5d4;
+  }
+
+  .dark body {
+    background: #0d0d0f;
+    color: #f2edf0;
+  }
+
+  .dark .announcement-bar {
+    background: #222027;
+    color: #e8afc3;
+  }
+
+  .dark .nav-cta,
+  .dark .button-dark,
+  .dark .mobile-book {
+    background: #e8afc3;
+    color: #0d0d0f;
+  }
+
+  .dark .nav-cta:hover,
+  .dark .button-dark:hover {
+    background: #f0c5d4;
+  }
+
+  .dark .mobile-menu {
+    background: #17171b;
+  }
+
+  .dark .visit-card {
+    background: #222127;
+    color: #f2edf0;
+  }
+
+  .dark .sun-icon {
+    display: none;
+  }
+
+  .dark .moon-icon {
+    display: inline;
+  }
+
+  .dark .work-number {
+    background: #222127;
+    color: #f2edf0;
+  }
+}
+
+/* PALETA ROSA Y NEGRO — SOLO MODO OSCURO */
+
+.dark .services-section {
+  background: #17171b;
+  color: #f2edf0;
+}
+
+.dark .services-section .services-top .eyebrow {
+  color: #e8afc3;
+}
+
+.dark .services-section .services-top h2,
+.dark .services-section .services-top h2 em {
+  color: #f2edf0;
+}
+
+.dark .services-section .services-top h2 em {
+  color: #e8afc3;
+}
+
+.dark .hero-stamp {
+  background: #e8afc3;
+  color: #0d0d0f;
+}
+
+.dark .note-star,
+.dark .ornament,
+.dark .quote-mark {
+  color: #e8afc3;
+}
+
+.dark h1 em,
+.dark h2 em,
+.dark blockquote em {
+  color: #e8afc3;
+}
+
+.dark .intro-section,
+.dark .quote-section {
+  background: #17171b;
+}
+
+.dark .portfolio-section {
+  background: #0d0d0f;
+}
+
+.dark .booking-form {
+  background: #17171b;
+}
+
+.dark .contact-hero-side {
+  background: #17171b;
+}
+
+.dark .form-feedback {
+  background: #222127;
+}
+
+.dark .form-field input,
+.dark .form-field select,
+.dark .form-field textarea {
+  background: #222127;
+  color: #f2edf0;
+}
+
+.dark .form-field option {
+  background: #222127;
+  color: #f2edf0;
+}
+
+.dark .form-field input::placeholder,
+.dark .form-field textarea::placeholder {
+  color: #b9aeb5;
 }
 @keyframes softFloat { 0%,100% { transform:translateY(0) rotate(-12deg); } 50% { transform:translateY(-9px) rotate(-9deg); } }
 @keyframes revealLine { from { transform:scaleX(0); transform-origin:left; } to { transform:scaleX(1); transform-origin:left; } }
