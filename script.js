@@ -50,14 +50,46 @@
       });
     }
 
-    if (themeToggle) {
-      themeToggle.addEventListener('click', function () {
-        var isDark = document.documentElement.classList.toggle('dark');
-        themeToggle.setAttribute('aria-label', isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
-        var meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute('content', isDark ? '#111111' : '#ffffff');
-      });
-    }
+    // Recuperar el tema que eligió anteriormente el usuario
+var savedTheme = localStorage.getItem('candela-theme');
+
+if (savedTheme === 'dark') {
+  document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
+}
+
+// Actualizar el botón y el color del navegador
+function updateTheme() {
+  var isDark = document.documentElement.classList.contains('dark');
+
+  if (themeToggle) {
+    themeToggle.setAttribute(
+      'aria-label',
+      isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'
+    );
+  }
+
+  var meta = document.querySelector('meta[name="theme-color"]');
+
+  if (meta) {
+    meta.setAttribute('content', isDark ? '#111111' : '#ffffff');
+  }
+}
+
+updateTheme();
+
+// Cambiar el tema únicamente cuando el usuario pulse el botón
+if (themeToggle) {
+  themeToggle.addEventListener('click', function () {
+    var isDark = document.documentElement.classList.toggle('dark');
+
+    // Guardar la elección
+    localStorage.setItem('candela-theme', isDark ? 'dark' : 'light');
+
+    updateTheme();
+  });
+}
 
     // Native in-page links: prevent the browser from leaving the page at a stale scroll position.
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
