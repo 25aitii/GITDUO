@@ -12,6 +12,19 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+  @theme {
+    --color-paper: #f3f0e9;
+    --color-paper-deep: #e8e3d9;
+    --color-ink: #25251f;
+    --color-olive: #737b5b;
+    --color-olive-dark: #525a40;
+    --font-display: "Italiana", Georgia, serif;
+    --font-body: "DM Sans", Arial, sans-serif;
+  }
+
+  @custom-variant dark (&:where(.dark, .dark *));
+</style>
 </head>
 <body class="bg-paper text-ink font-body antialiased selection:bg-olive selection:text-paper">
   <div class="announcement-bar text-center py-2 px-4 text-[9px] sm:text-[10px] tracking-[.22em] uppercase">Madrid, España <span class="mx-2 opacity-40"></span> Tattoo, made personal <span class="mx-2 opacity-40"></span> Citas abiertas por encargo</div>
@@ -54,7 +67,7 @@
       <div class="intro-label" data-aos="fade-up"><span>01 — THE STUDIO</span><span>UNA FORMA DE EXPRESARTE</span></div>
       <div class="intro-grid">
         <h2 data-aos="fade-up">La belleza está<br>en <em>lo sutil.</em></h2>
-        <div class="intro-text" data-aos="fade-up" data-aos-delay="120"><p class="intro-lead">Creo en los tatuajes que no necesitan hacer ruido para decirlo todo.</p><p>En Candela, cada diseño nace de una conversación. Un recuerdo, una idea o una pequeña obsesión se transforman en una pieza pensada para ti. Trabajo desde la delicadeza, el detalle y el respeto por la piel.</p><a class="underlined-link" href="#servicios">Descubre mi manera de trabajar <span>↗</span></a></div>
+        <div class="intro-label pb-[22px] border-b border-[#25251f30]" data-aos="fade-up"> data-aos-delay="120"><p class="intro-lead">Creo en los tatuajes que no necesitan hacer ruido para decirlo todo.</p><p>En Candela, cada diseño nace de una conversación. Un recuerdo, una idea o una pequeña obsesión se transforman en una pieza pensada para ti. Trabajo desde la delicadeza, el detalle y el respeto por la piel.</p><a class="underlined-link" href="#servicios">Descubre mi manera de trabajar <span>↗</span></a></div>
       </div>
       <div class="intro-bottom"><span>LESS, BUT MEANINGFUL.</span><span class="ornament"></span><span>ART ON SKIN, WITH SOUL.</span></div>
     </section>
