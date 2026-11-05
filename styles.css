@@ -815,7 +815,6 @@ html:not(.aos-ready) [data-aos] {
 
 }
 
-
 /*RESPONSIVE*/
 
 @media (max-width: 767px) {
@@ -920,7 +919,7 @@ html:not(.aos-ready) [data-aos] {
 }
 
 
-/* ── Detalles tipográficos y pequeñas ilustraciones editoriales ── */
+
 .ballet-word {
   font-family: 'Ballet', cursive;
   font-weight: 400;
@@ -932,7 +931,6 @@ html:not(.aos-ready) [data-aos] {
   text-transform: none;
 }
 
-/* PNGs originales de la artista: se integran como acentos, sin alterar el flujo. */
 .intro-section,
 .quote-section {
   position: relative;
@@ -978,7 +976,7 @@ html:not(.aos-ready) [data-aos] {
 }
 
 
-/* Ajuste puntual de la sección de presentación: jerarquía y legibilidad. */
+
 .intro-grid {
   position: relative;
   align-items: center;
@@ -1018,7 +1016,7 @@ html:not(.aos-ready) [data-aos] {
   padding-bottom: 7px;
 }
 
-/* Cisne: bajo el titular, en la esquina inferior izquierda, con flotación sutil. */
+
 .intro-section { position: relative; }
 .intro-grid > .decor-swan {
   position: absolute;
@@ -1071,4 +1069,8 @@ html:not(.aos-ready) [data-aos] {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.contact-nav-links a {
+  color: #111111 !important;
 }

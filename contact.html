@@ -16,7 +16,25 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-paper: #FFFFFF;
+      --color-paper-deep: #F5F1F3;
+      --color-ink: #111111;
+      --color-olive: #E8AFC3;
+      --color-olive-dark: #D78FA8;
+      --color-surface: #F3E8ED;
+
+      --font-display: "Italiana", Georgia, serif;
+      --font-body: "DM Sans", Arial, sans-serif;
+    }
+
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+
+</head>
 </head>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -46,7 +64,7 @@
         CANDELA<span>®</span>
       </a>
 
-      <div class="hidden md:flex items-center gap-9 nav-links">
+      <div class="hidden md:flex items-center gap-9 nav-links contact-nav-links">
         <a href="index.html#filosofia">El estudio</a>
         <a href="index.html#trabajo">Portfolio</a>
         <a href="index.html#servicios">Especialidades</a>
@@ -72,7 +90,7 @@
       </div>
     </nav>
 
-    <!-- MENÚ MÓVIL -->
+    
     <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
       <a href="index.html#filosofia">El estudio <span>01</span></a>
       <a href="index.html#trabajo">Portfolio <span>02</span></a>
