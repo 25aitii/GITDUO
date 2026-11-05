@@ -309,7 +309,6 @@
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
 
 
-/* CANDELA STUDIO — monochrome art direction */
 @theme {
   --color-paper: #ffffff;
   --color-paper-deep: #f3f3f1;
@@ -373,7 +372,7 @@
   outline-offset: 5px;
 }
 
-/* Progressive enhancement: AOS adds motion, but never hides content if CDN fails. */
+
 html:not(.aos-ready) [data-aos] {
   opacity: 1 !important;
   transform: none !important;
@@ -386,13 +385,11 @@ html:not(.aos-ready) [data-aos] {
 }
 
 
-/* ==========================================
-   CANDELA STUDIO — CONTACT PAGE
-   ========================================== */
+/*CONTACT PAGE*/
 
 @layer components {
 
-  /* PORTADA CONTACTO */
+ 
 
   .contact-hero {
     min-height: 570px;
@@ -779,9 +776,7 @@ html:not(.aos-ready) [data-aos] {
 }
 
 
-/* ==========================================
-   RESPONSIVE — TABLET Y MÓVIL
-   ========================================== */
+/*RESPONSIVE*/
 
 @media (max-width: 767px) {
 
@@ -877,8 +872,6 @@ html:not(.aos-ready) [data-aos] {
 
 }
 
-
-/* ACCESIBILIDAD Y MOVIMIENTO */
 
 @media (prefers-reduced-motion: reduce) {
   .contact-social-card {
