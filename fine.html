@@ -1,15 +1,16 @@
+
 <!doctype html>
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contacta con Candela Studio y solicita tu cita para un tatuaje personalizado en Madrid.">
-  <meta name="theme-color" content="#ffffff">
-  <title>CONTACTO — CANDELA STUDIO</title>
+  <meta name="description" content="Galería de tatuajes Fine Line de Candela Studio.">
+  <meta name="theme-color" content="#f3f0e9">
+
+  <title>FINE LINE — CANDELA STUDIO</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,6 +19,211 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+<body class="bg-paper text-ink font-body antialiased selection:bg-olive selection:text-paper">
+
+  
+
+
+  <div class="announcement-bar text-center py-2 px-4 text-[9px] sm:text-[10px] tracking-[.22em] uppercase">
+    Madrid, España <span class="mx-2 opacity-40"></span>
+    Tattoo, made personal <span class="mx-2 opacity-40"></span>
+    Citas abiertas por encargo
+  </div>
+
+ 
+
+
+  <header class="site-header sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur-xl">
+
+    <nav class="mx-auto max-w-[1440px] px-5 md:px-10 h-[76px] flex items-center justify-between" aria-label="Navegación principal">
+
+      <a href="index.html#inicio" class="wordmark" aria-label="Candela Studio, inicio">
+        CANDELA<span>®</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-9 nav-links">
+        <a href="index.html#filosofia">El estudio</a>
+        <a href="index.html#trabajo">Portfolio</a>
+        <a href="index.html#servicios">Especialidades</a>
+        <a href="index.html#visita">Visítanos</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+          <span class="sun-icon">☼</span>
+          <span class="moon-icon">☾</span>
+        </button>
+
+        <a href="contact.html" class="nav-cta hidden sm:inline-flex">
+          Pedir cita <span>↗</span>
+        </a>
+
+        <button id="menuToggle" class="menu-toggle md:hidden" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
+      <a href="index.html#filosofia">El estudio <span>01</span></a>
+      <a href="index.html#trabajo">Portfolio <span>02</span></a>
+      <a href="index.html#servicios">Especialidades <span>03</span></a>
+      <a href="index.html#visita">Visítanos <span>04</span></a>
+      <a href="contact.html" class="mobile-book">Pedir cita ↗</a>
+    </div>
+
+  </header>
+
+  <main>
+
+  
+
+    
+
+    <section class="portfolio-section section-pad">
+
+      <div class="section-heading" data-aos="fade-up">
+
+        <div class="portfolio-title-wrap">
+          <div>
+            <p class="eyebrow">01 — THE ART OF FINE LINE</p>
+            <h2>Fine line,<br><em>delicate art.</em></h2>
+          </div>
+        </div>
+
+        <p class="section-aside">
+          Trazos delicados,<br>
+          pequeños detalles y<br>
+          diseños con significado.
+        </p>
+
+      </div>
+
+      
+
+
+
+      <div class="portfolio-grid">
+
+        <figure class="work-card work-tall" data-aos="fade-up">
+          <div class="work-image">
+            <img src="assets/detail-floral.jpg"
+                 alt="Tatuaje floral de línea fina"
+                 loading="lazy">
+            <span class="work-number">01</span>
+          </div>
+          <figcaption>
+            <span>FINE LINE / DETAILS</span>
+            <span>01 — 05</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-card work-offset" data-aos="fade-up" data-aos-delay="100">
+          <div class="work-image">
+            <img src="assets/hero-tattoo.jpg"
+                 alt="Detalle de tatuaje delicado sobre la piel"
+                 loading="lazy">
+            <span class="work-number">02</span>
+          </div>
+          <figcaption>
+            <span>DELICATE / TATTOO</span>
+            <span>02 — 05</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-card work-small" data-aos="fade-up">
+          <div class="work-image">
+            <img src="assets/flash-sheet.jpg"
+                 alt="Bocetos originales de tatuajes fine line"
+                 loading="lazy">
+            <span class="work-number">03</span>
+          </div>
+          <figcaption>
+            <span>ORIGINAL / SKETCHES</span>
+            <span>03 — 05</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-card work-wide" data-aos="fade-up" data-aos-delay="100">
+          <div class="work-image">
+            <img src="assets/healed-work.jpg"
+                 alt="Tatuajes de línea fina sobre la piel"
+                 loading="lazy">
+            <span class="work-number">04</span>
+          </div>
+          <figcaption>
+            <span>HEALED / ON SKIN</span>
+            <span>04 — 05</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-card work-tall" data-aos="fade-up">
+          <div class="work-image">
+            <img src="assets/sketchbook.jpg"
+                 alt="Proceso creativo de diseños de tatuajes"
+                 loading="lazy">
+            <span class="work-number">05</span>
+          </div>
+          <figcaption>
+            <span>ART / PROCESS</span>
+            <span>05 — 05</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="portfolio-footer">
+        <span>EVERY LINE TELLS A STORY.</span>
+        <a href="contact.html" class="underlined-link">
+          Reserva tu cita <span>↗</span>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <a href="index.html#inicio" class="footer-wordmark">
+        CANDELA<span>®</span>
+      </a>
+
+      <p>
+        Small stories.<br>
+        Forever on your skin.
+      </p>
+
+      <a class="footer-ig" href="https://www.instagram.com/candelastatt/" target="_blank" rel="noopener noreferrer">
+        INSTAGRAM ↗
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 CANDELA STUDIO — CONCEPT WEBSITE</span>
+      <a href="#">BACK TO TOP ↑</a>
+      <span>MADE WITH INTENTION.</span>
+    </div>
+
+  </footer>
+
+ 
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
