@@ -44,16 +44,36 @@
   .eyebrow-line { width:29px; height:1px; background:currentColor; }
   .hero-copy h1,.section-heading h2,.intro-grid h2,.services-top h2,.visit-copy h2 { font-family:var(--font-display); font-weight:400; font-size:clamp(62px,8vw,116px); line-height:.91; letter-spacing:-.045em; margin:30px 0 25px; }
   h1 em,h2 em,blockquote em { color:var(--color-olive); font-weight:400; }
-  .hero-description { max-width:380px; font-size:13px; line-height:1.9; color:color-mix(in srgb,var(--color-ink) 70%,transparent); }
-  .hero-actions { display:flex; align-items:center; gap:27px; margin-top:35px; }
+
+  .hero-description
+   { max-width:380px; 
+    font-size:13px; 
+    line-height:1.9; 
+    color:color-mix(in srgb,var(--color-ink) 70%,transparent); 
+  }
+  
   .button-dark { display:inline-flex; align-items:center; gap:35px; padding:17px 20px; background:var(--color-ink); color:var(--color-paper); font-size:9px; text-transform:uppercase; letter-spacing:.15em; transition:all .25s ease; }
   .button-dark span { font-size:15px; }
   .text-link,.underlined-link { font-size:10px; letter-spacing:.08em; border-bottom:1px solid currentColor; padding-bottom:5px; }
   .text-link span { margin-left:8px; }
-  .hero-note { display:flex; align-items:center; gap:12px; margin-top:70px; font-size:9px; line-height:1.6; letter-spacing:.1em; text-transform:uppercase; }
-  .note-star { color:var(--color-olive); font-size:29px; }
-  .hero-visual { position:relative; max-width:530px; justify-self:end; width:100%; }
-  .hero-image-wrap { height:500px; overflow:hidden; background:var(--color-paper-deep); }
+  
+  
+  .note-star
+   { color:var(--color-olive); 
+    font-size:29px; 
+  }
+
+
+  .hero-visual 
+  { position:relative; 
+    max-width:530px; 
+    justify-self:end; 
+    width:100%; 
+  }
+
+
+  .hero-image-wrap
+   { height:500px; overflow:hidden; background:var(--color-paper-deep); }
   .hero-image { width:100%; height:100%; object-fit:cover; object-position:center 48%; filter:saturate(.76); }
   .hero-stamp { position:absolute; left:-35px; bottom:65px; width:94px; height:94px; border-radius:50%; background:var(--color-olive); color:#f3f0e9; display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:7px; letter-spacing:.15em; transform:rotate(-12deg); }
   .hero-stamp strong { font-size:25px; line-height:1.15; font-weight:400; }
@@ -183,7 +203,7 @@
   }
 }
 
-/* PALETA ROSA Y NEGRO — SOLO MODO OSCURO */
+/* MODO OSCURO */
 
 .dark .services-section {
   background: #17171b;
