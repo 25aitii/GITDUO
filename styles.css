@@ -909,3 +909,137 @@ html:not(.aos-ready) [data-aos] {
     transition: none;
   }
 }
+
+
+/* ── Detalles tipográficos y pequeñas ilustraciones editoriales ── */
+.ballet-word {
+  font-family: 'Ballet', cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  font-size: 1.12em;
+  line-height: .9;
+  letter-spacing: -.035em;
+  text-transform: none;
+}
+
+/* PNGs originales de la artista: se integran como acentos, sin alterar el flujo. */
+.intro-section,
+.quote-section {
+  position: relative;
+  overflow: hidden;
+}
+.decor-illustration {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.decor-swan {
+  width: clamp(82px, 10vw, 132px);
+  right: 6.5%;
+  bottom: 7%;
+  transform: rotate(7deg);
+  opacity: .9;
+}
+.decor-spoon {
+  width: clamp(46px, 6vw, 76px);
+  right: 9%;
+  top: 50%;
+  transform: translateY(-50%) rotate(9deg);
+  opacity: .88;
+}
+@media (max-width: 767px) {
+  .decor-swan {
+    width: 66px;
+    right: 5%;
+    bottom: 4%;
+    opacity: .72;
+  }
+  .decor-spoon {
+    width: 42px;
+    right: 4%;
+    top: 18%;
+    transform: rotate(9deg);
+    opacity: .7;
+  }
+  .ballet-word { font-size: 1.06em; }
+}
+
+
+/* Ajuste puntual de la sección de presentación: jerarquía y legibilidad. */
+.intro-grid {
+  position: relative;
+  align-items: center;
+}
+.intro-grid > .intro-text {
+  max-width: 430px;
+  width: 100%;
+  justify-self: end;
+  padding: 0 0 22px;
+  border-bottom: 1px solid #25251f30;
+}
+.intro-grid > .intro-text .intro-lead {
+  font-family: var(--font-display);
+  font-size: clamp(21px, 2vw, 27px);
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  margin: 0 0 22px;
+  max-width: 410px;
+}
+.intro-grid > .intro-text p:not(.intro-lead) {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: .005em;
+  opacity: .76;
+  margin: 0 0 25px;
+  max-width: 410px;
+}
+.intro-grid > .intro-text .underlined-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: .09em;
+  margin-top: 2px;
+  padding-bottom: 7px;
+}
+
+/* Cisne: bajo el titular, en la esquina inferior izquierda, con flotación sutil. */
+.intro-section { position: relative; }
+.intro-grid > .decor-swan {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: clamp(76px, 9vw, 118px);
+  height: auto;
+  left: 13%;
+  bottom: 8px;
+  right: auto;
+  top: auto;
+  opacity: .92;
+  transform-origin: center;
+  animation: swanFloat 5s ease-in-out infinite;
+}
+@keyframes swanFloat {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-8px) rotate(-9deg); }
+}
+@media (max-width: 767px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 32px; padding: 48px 0 105px; }
+  .intro-grid > .intro-text { justify-self: stretch; max-width: none; }
+  .intro-grid > .intro-text .intro-lead { font-size: 23px; line-height: 1.35; }
+  .intro-grid > .intro-text p:not(.intro-lead) { font-size: 13px; line-height: 1.85; }
+  .intro-grid > .decor-swan {
+    width: 65px;
+    left: 13%;
+    bottom: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro-grid > .decor-swan { animation: none; }
+}
