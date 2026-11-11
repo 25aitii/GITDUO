@@ -1,22 +1,17 @@
-
 <!doctype html>
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contacta con Candela Studio y solicita tu cita para un tatuaje personalizado en Madrid.">
-  <meta name="theme-color" content="#ffffff">
-  <title>CONTACTO — CANDELA STUDIO</title>
-
+  <meta name="description" content="Candela Studio — tatuajes delicados, fine line, diseños botánicos y piezas personalizadas en Madrid.">
+  <meta name="theme-color" content="#f3f0e9">
+  <title>CANDELA STUDIO — Tattoo & Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Ballet&family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <style type="text/tailwindcss">
     @theme {
@@ -34,19 +29,22 @@
     @custom-variant dark (&:where(.dark, .dark *));
   </style>
 
+  <link rel="stylesheet" href="styles.css">
+  <style>
+        body.contact-page h1, 
+        body.contact-page h2, 
+        body.contact-page h3, 
+        body.contact-page p, 
+        body.contact-page span, 
+        body.contact-page a {
+            font-family: inherit;
+        }
+    </style>
 </head>
-</head>
+<body class="contact-page"></body>
+<body id="top" class="bg-paper text-ink font-body antialiased">
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
-
-
- 
-
-<body class="bg-paper text-ink font-body antialiased">
-
-  <!-- BARRA ARRIBA -->
+  
   <div class="announcement-bar text-center py-2 px-4 text-[9px] sm:text-[10px] tracking-[.22em] uppercase">
     Calle del Pez · Malasaña, Madrid
     <span class="mx-2 opacity-40"></span>
@@ -55,7 +53,7 @@
     Citas abiertas por encargo
   </div>
 
- 
+  
   <header class="site-header sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur-xl">
 
     <nav class="mx-auto max-w-[1440px] px-5 md:px-10 h-[76px] flex items-center justify-between" aria-label="Navegación principal">
@@ -91,7 +89,7 @@
     </nav>
 
     
-    <div id="mobileMenu" class="mobile-menu md:hidden" aria-hidden="true">
+    <div id="mobileMenu" class="mobile-menu md:hidden">
       <a href="index.html#filosofia">El estudio <span>01</span></a>
       <a href="index.html#trabajo">Portfolio <span>02</span></a>
       <a href="index.html#servicios">Especialidades <span>03</span></a>
@@ -103,22 +101,22 @@
 
   <main>
 
+    
+    <section class="relative grid min-h-[570px] grid-cols-1 md:grid-cols-[1fr_0.8fr] items-center gap-[45px] md:gap-[10vw] overflow-hidden px-[23px] py-[65px] md:px-[max(8vw,24px)] md:pt-[90px] md:pb-[100px]">
 
-    <section class="contact-hero">
-
-      <div class="contact-hero-copy" data-aos="fade-up">
+      <div data-aos="fade-up">
 
         <p class="eyebrow">
           <span class="eyebrow-line"></span>
           05 — LET'S TALK
         </p>
 
-        <h1>
+        <h1 class="font-display text-[clamp(75px,17vw,105px)] md:text-[clamp(75px,10vw,130px)] font-normal leading-[.88] tracking-[-.045em] my-[25px] md:my-[35px]">
           Tu próxima<br>
-          <em>historia.</em>
+          <em class="text-olive">historia.</em>
         </h1>
 
-        <p class="contact-intro">
+        <p class="max-w-[390px] text-[13px] leading-[2] opacity-70 mb-[30px]">
           Cada tatuaje empieza con una conversación.
           Cuéntame qué tienes en mente y encontraremos
           juntas la forma de llevarlo a tu piel.
@@ -130,40 +128,39 @@
 
       </div>
 
-      <div class="contact-hero-side" data-aos="fade-left">
+      <div class="relative flex min-h-[300px] md:min-h-[350px] w-[88%] md:w-full justify-self-end flex-col items-center justify-center bg-paper-deep dark:bg-[#17171b] text-center p-[30px] rotate-[2deg]" data-aos="fade-left">
 
-       
-
-        <p>
+        <p class="font-display text-[clamp(35px,5vw,65px)] leading-[.95]">
           GOOD IDEAS<br>
           START WITH<br>
-          <em>A HELLO.</em>
+          <em class="text-olive">A HELLO.</em>
         </p>
 
-        <span class="contact-side-caption">
+        <span class="absolute bottom-[20px] text-[8px] tracking-[.2em]">
           CANDELA STUDIO · MALASAÑA · MADRID
         </span>
 
       </div>
 
-      <span class="contact-index">CONTACT / 01 — 02</span>
+      <span class="absolute bottom-[25px] left-[23px] md:bottom-[30px] md:left-[8vw] text-[8px] tracking-[.2em] opacity-55">
+        CONTACT / 01 — 02
+      </span>
 
     </section>
 
+    <!-- SECCIÓN RESERVAS -->
+    <section id="reserva" class="grid grid-cols-1 md:grid-cols-[.75fr_1.25fr] items-start gap-[45px] md:gap-[8vw] bg-paper-deep dark:bg-[#17171b] px-[23px] py-[75px] md:py-[110px] md:px-[max(8vw,24px)]">
 
-  
-    <section id="reserva" class="booking-section section-pad">
-
-      <div class="booking-heading" data-aos="fade-up">
+      <div class="md:sticky md:top-[120px]" data-aos="fade-up">
 
         <p class="eyebrow">01 — BOOK YOUR SESSION</p>
 
-        <h2>
+        <h2 class="font-display text-[70px] md:text-[clamp(60px,7vw,90px)] font-normal leading-[.95] tracking-[-.04em] my-[30px]">
           Hablemos de<br>
-          <em>tu idea.</em>
+          <em class="text-olive">tu idea.</em>
         </h2>
 
-        <p>
+        <p class="max-w-[370px] text-[12px] leading-[2] opacity-70">
           Rellena este pequeño formulario con los detalles
           de tu propuesta y tu disponibilidad. La fecha y
           la hora son orientativas: la cita quedará
@@ -172,19 +169,20 @@
 
       </div>
 
+      <!-- FORMULARIO -->
+      <form id="bookingForm" class="w-full bg-paper dark:bg-[#303128] p-[25px_20px] md:p-[clamp(22px,4vw,45px)] shadow-[0_20px_60px_#00000008]" data-aos="fade-up">
 
-      <form id="bookingForm" class="booking-form" data-aos="fade-up">
-
-        <div class="form-topline">
+        <div class="flex justify-between gap-[15px] border-b border-[#25251f30] pb-[20px] mb-[35px] text-[7px] md:text-[8px] tracking-[.17em]">
           <span>BOOKING REQUEST</span>
-          <span> MALASAÑA · MADRID / 2026</span>
+          <span>MALASAÑA · MADRID / 2026</span>
         </div>
 
-        <div class="form-grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[27px] md:gap-x-[25px] md:gap-y-[30px]">
 
-          <div class="form-field">
-            <label for="name">
-              Nombre completo <span>*</span>
+          <!-- NOMBRE -->
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="name" class="text-[9px] tracking-[.12em] uppercase">
+              Nombre completo <span class="text-olive">*</span>
             </label>
 
             <input
@@ -194,13 +192,14 @@
               autocomplete="name"
               placeholder="Cómo te llamas"
               required
+              class="w-full rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px] placeholder:text-ink/40 dark:placeholder:text-[#b9aeb5]"
             >
           </div>
 
-         
-          <div class="form-field">
-            <label for="email">
-              Correo electrónico <span>*</span>
+          
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="email" class="text-[9px] tracking-[.12em] uppercase">
+              Correo electrónico <span class="text-olive">*</span>
             </label>
 
             <input
@@ -210,16 +209,21 @@
               autocomplete="email"
               placeholder="tu@email.com"
               required
+              class="w-full rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px] placeholder:text-ink/40 dark:placeholder:text-[#b9aeb5]"
             >
           </div>
 
-        
-          <div class="form-field">
-            <label for="tattooType">
+          
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="tattooType" class="text-[9px] tracking-[.12em] uppercase">
               Tipo de tatuaje
             </label>
 
-            <select id="tattooType" name="tattooType">
+            <select
+              id="tattooType"
+              name="tattooType"
+              class="w-full cursor-pointer rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px] dark:[&_option]:bg-[#303128] dark:[&_option]:text-[#f0eee6]"
+            >
               <option value="">Selecciona una especialidad</option>
               <option>Fine line</option>
               <option>Botanical & floral</option>
@@ -229,9 +233,9 @@
             </select>
           </div>
 
-         
-          <div class="form-field">
-            <label for="bodyZone">
+          
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="bodyZone" class="text-[9px] tracking-[.12em] uppercase">
               Zona del cuerpo
             </label>
 
@@ -240,13 +244,14 @@
               name="bodyZone"
               type="text"
               placeholder="Ej. antebrazo, muñeca..."
+              class="w-full rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px] placeholder:text-ink/40 dark:placeholder:text-[#b9aeb5]"
             >
           </div>
 
-          
-          <div class="form-field">
-            <label for="date">
-              Fecha preferida <span>*</span>
+         
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="date" class="text-[9px] tracking-[.12em] uppercase">
+              Fecha preferida <span class="text-olive">*</span>
             </label>
 
             <input
@@ -254,13 +259,14 @@
               name="date"
               type="date"
               required
+              class="w-full rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px]"
             >
           </div>
 
           
-          <div class="form-field">
-            <label for="time">
-              Hora preferida <span>*</span>
+          <div class="flex min-w-0 flex-col gap-[12px]">
+            <label for="time" class="text-[9px] tracking-[.12em] uppercase">
+              Hora preferida <span class="text-olive">*</span>
             </label>
 
             <input
@@ -268,12 +274,13 @@
               name="time"
               type="time"
               required
+              class="w-full rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px]"
             >
           </div>
 
           
-          <div class="form-field form-field-full">
-            <label for="details">
+          <div class="flex min-w-0 flex-col gap-[12px] md:col-span-2">
+            <label for="details" class="text-[9px] tracking-[.12em] uppercase">
               Cuéntame tu idea
             </label>
 
@@ -282,35 +289,36 @@
               name="details"
               rows="5"
               placeholder="Tamaño aproximado, referencias, significado o cualquier detalle que quieras compartir..."
+              class="w-full min-h-[110px] resize-y rounded-none border-0 border-b border-[#25251f50] bg-transparent text-ink dark:text-[#f2edf0] py-[12px] font-body text-[12px] leading-[1.8] outline-none transition-colors focus:border-olive focus-visible:outline-2 focus-visible:outline-olive focus-visible:outline-offset-[5px] placeholder:text-ink/40 dark:placeholder:text-[#b9aeb5]"
             ></textarea>
           </div>
 
         </div>
 
+      
+        <div class="mt-[40px] pt-[25px] border-t border-[#25251f30] flex flex-col md:flex-row md:justify-between md:items-center gap-[20px]">
 
-        
-        <div class="form-submit-row">
-
-          <p>
-            <span>*</span> Campos obligatorios.
+          <p class="max-w-full md:max-w-[220px] text-[9px] leading-[1.8] opacity-60">
+            <span class="text-olive">*</span> Campos obligatorios.
             Tu solicitud no confirma automáticamente la cita.
           </p>
 
-          <button class="button-dark" type="submit">
+          <button class="button-dark w-full md:w-auto md:shrink-0 md:justify-between border-0 cursor-pointer justify-between" type="submit">
             Preparar solicitud <span>↗</span>
           </button>
 
         </div>
 
+       
+        <div id="formFeedback" class="mt-[30px] p-[25px] bg-paper-deep dark:bg-[#24251f] border-l-2 border-olive" role="status" aria-live="polite" hidden>
 
-        
-        <div id="formFeedback" class="form-feedback" role="status" aria-live="polite" hidden>
+          <strong class="font-display text-[25px] font-normal">
+            Tu solicitud está preparada.
+          </strong>
 
-          <strong>Tu solicitud está preparada.</strong>
+          <p id="requestSummary" class="whitespace-pre-line text-[11px] leading-[1.9] my-[18px] break-words"></p>
 
-          <p id="requestSummary"></p>
-
-          <div class="feedback-actions">
+          <div class="flex flex-col md:flex-row flex-wrap items-start gap-[15px] md:gap-[25px] mb-[20px]">
 
             <button id="copyRequest" class="underlined-link" type="button">
               Copiar solicitud ↗
@@ -327,7 +335,7 @@
 
           </div>
 
-          <small>
+          <small class="block text-[9px] leading-[1.8] opacity-65">
             Este formulario no envía datos automáticamente.
             Copia el texto y compártelo por Instagram
             para confirmar disponibilidad.
@@ -339,29 +347,28 @@
 
     </section>
 
-
     
-    <section class="contact-alternative section-pad">
+    <section class="grid grid-cols-1 md:grid-cols-[1fr_.8fr] items-center gap-[50px] md:gap-[12vw] px-[23px] py-[75px] md:py-[110px] md:px-[max(8vw,24px)]">
 
-      <div class="alternative-copy" data-aos="fade-up">
+      <div data-aos="fade-up">
 
         <p class="eyebrow">
           02 — PREFER A MESSAGE?
         </p>
 
-        <h2>
+        <h2 class="font-display text-[70px] md:text-[clamp(60px,7vw,90px)] font-normal leading-[.95] tracking-[-.04em] my-[30px]">
           También puedes<br>
-          <em>escribirme a +34 670 45 67 88.</em>
+          <em class="text-olive not-italic">escribirme a +34 670 45 67 88.</em>
         </h2>
 
-        <p>
+        <p class="max-w-[370px] text-[12px] leading-[2] opacity-70">
           Si todavía no tienes clara tu idea o prefieres
           hablar directamente, puedes contactar conmigo
           a través de mi número de teléfono +34 67 045 67 88.
         </p>
 
         <a
-          class="button-dark"
+          class="button-dark mt-[30px]"
           href="https://www.instagram.com/candelastatt/"
           target="_blank"
           rel="noopener noreferrer"
@@ -371,32 +378,37 @@
 
       </div>
 
+      <!-- TARJETA INSTAGRAM -->
+      <div class="flex min-h-[340px] md:min-h-[380px] w-[90%] md:w-full justify-self-center flex-col justify-between bg-ink text-paper p-[25px] rotate-[-2deg] transition-transform duration-500 ease-in-out hover:rotate-0 motion-reduce:transition-none" data-aos="fade-left">
 
-      <div class="contact-social-card" data-aos="fade-left">
-
-        <div class="social-card-top">
+        <div class="flex justify-between gap-[10px] text-[8px] tracking-[.17em]">
           <span>CANDELA STUDIO</span>
-          <span> 02 / 02</span>
+          <span>02 / 02</span>
         </div>
+<div class="text-center">
 
-        <div class="social-card-center">
-          <span>♡</span>
-          <strong>
+          <span class="block text-[40px] mb-[15px]">♡</span>
+
+          <strong class="font-display text-[55px] md:text-[clamp(40px,5vw,65px)] font-normal leading-[.95]" style="font-family: inherit;">
             Let's make<br>
             it personal.
           </strong>
+
         </div>
 
-        <div class="social-card-bottom">
+        <div class="flex justify-between gap-[10px] border-t border-white/30 pt-[18px] text-[8px] tracking-[.17em]">
+
           <span>INSTAGRAM</span>
 
           <a
+            class="border-b border-white/50 pb-[4px] hover:opacity-60"
             href="https://www.instagram.com/candelastatt/"
             target="_blank"
             rel="noopener noreferrer"
           >
             @candelastatt ↗
           </a>
+
         </div>
 
       </div>
@@ -404,7 +416,6 @@
     </section>
 
   </main>
-
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -435,10 +446,7 @@
 
       <span>© 2026 CANDELA STUDIO — CONCEPT WEBSITE</span>
 
-      <a
-        href="#top"
-        onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"
-      >
+      <a href="#top">
         BACK TO TOP ↑
       </a>
 
@@ -448,9 +456,10 @@
 
   </footer>
 
-
-
-  
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
